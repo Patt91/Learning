@@ -11,7 +11,6 @@ number=int(number/10)
 d=number%10
 number=int(number/10)
 
-
 print(a+b+c+d)
 
 
