@@ -1,4 +1,7 @@
 
-dog=4
-age = (dog-2)*4
-print (age)
+letters=str(input('input a letters'))
+
+vowel=[a,e,i,o,u]
+
+if letters in vowel:
+    print ('the letter is vowel')
