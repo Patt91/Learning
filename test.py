@@ -7,4 +7,4 @@ while x <= 7:
     r= c4 / 2**(4-x)
     x += 1
     lista_c.append(r)
-print (lista_c)
+    print (lista_c)
