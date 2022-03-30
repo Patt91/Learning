@@ -35,3 +35,5 @@ def hexadecimal(x):
     print(r)
 
 hexadecimal(x)
+
+y=input('insert the measure meter; tablespoons, teaspoons, cup \n')
