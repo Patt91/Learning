@@ -4,7 +4,7 @@ def magic ():
     day=1
     month=1
 
-    while year != 2000:
+    while year != 2001:
         month=1
         while month < 12:
             day=1
