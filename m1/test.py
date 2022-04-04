@@ -1,9 +1,6 @@
 
-
-day=1
-month=1
-year=1992
-
-while year != 2000:
-    print('ok')
-    year=year+1
+x='11:30'
+y=bytearray(x)
+y[2]=','
+s=str(y)
+print(s)
