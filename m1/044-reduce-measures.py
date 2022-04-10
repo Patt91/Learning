@@ -1,23 +1,19 @@
 
-y=input('insert the measure meter; tablespoons, teaspoons, cup \n')
-x=int(input('insert the quantity \n'))
-cup=()
-teaspoons=()
-teaspoons=()
+def misuration (misure,quantity):
+    cup=()
+    teaspoons=()
+    teaspoons=()
+    if misure == 'cup':
+        quantity=quantity*16
+    elif misure == 'teaspoons':
+        quantity=quantity*4
+    while quantity != 0:
+        cup = int(quantity/16)
+        quantity=quantity%16
+        teaspoons= int(quantity/4)
+        quantity=quantity%4
+        tablespoons= int(quantity/1)
+        quantity=0
+    print(f'you need {cup} cup, {teaspoons} teaspoons, {tablespoons} tablespoons')
 
-
-if y == 'cup':
-    x=x*16
-elif y == 'teaspoons':
-    x=x*4
-
-
-while x != 0:
-    cup = int(x/16)
-    x=x%16
-    teaspoons= int(x/4)
-    x=x%4
-    tablespoons= int(x/1)
-    x=0
-
-print(f'you need {cup} cup, {teaspoons} teaspoons, {tablespoons} tablespoons')
+misuration('cup',16)
