@@ -1,5 +1,5 @@
 import numpy as np
-
+#this function controll if the phase insert by the user is palindromes or not
 def controll (string):
     y=str()
     for word in string:
