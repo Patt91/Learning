@@ -1,4 +1,4 @@
-
+#this functiom remouve the special caracter indicated in list no_word
 def remuve(string):
     no_word=[',','.','!','?','-','_',';',':']
     new_string=str()
