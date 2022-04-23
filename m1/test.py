@@ -1,5 +1,6 @@
+import numpy as np
 
-x='cazzo'
+vowels = "aeiou"
+consonant = "bcdfghjklmnpqrstvwxyz"
+x='acazzo io'
 
-x=x+'c'
-print(x)
