@@ -3,33 +3,25 @@
 from cmath import phase
 from http.client import parse_headers
 
+msg = input("Enter message: ")
 
-x=input('insert a sentence for a translation in Latinpig\n')
-vowels = "aeiou"
-consonant = "bcdfghjklmnpqrstvwxyz"
-phrase=x.split(' ')
-phrase_final=[]
-useful=[]
-
-i=0
-for word in phrase:
-    if word[0] in vowels:
-        add=word+'way'
-        phrase_final.append(add)
-    else:
-        useful=[]
-        add=()
-        for word in word:
-            useful.append(word)
-        while i <= len(word):
-            if useful[0] in consonant:
-                add=useful[0]
-                useful.append(add)
-                useful.pop(0)
-            i=i+1
-        for z in useful:
-            phrase_final.append(z)
-        
-    phrase_final.append(' ')
-             
-print("".join(phrase_final))
+phone_keys = {
+    '1': ['.', ',', '?', '!', ':'], 
+    '2': ['A', 'B', 'C'], 
+    '3': ['D', 'E', 'F'],
+    '4': ['G', 'H', 'I'],
+    '5': ['J', 'K', 'L'],
+    '6': ['M', 'N', 'O'],
+    '7': ['P', 'Q', 'R', 'S'],
+    '8': ['T', 'U', 'V'],
+    '9': ['W', 'X', 'Y' ,'Z'],
+    '0': [' ']
+    }
+total_presses = ""
+for c in range(0,len(msg)):
+    for key in phone_keys:
+        if msg[c].upper() in phone_keys[key]:
+            char_index = phone_keys[key].index(msg[c].upper())
+            key_press = key * (char_index + 1)
+            total_presses += key_press
+print(f"Total key presses: {total_presses}")
